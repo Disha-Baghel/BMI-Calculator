@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         EditText edtWeight, edtHeightFt, edtHeightIn;
-        Button btnCalculate;
+        Button Calculate;
         TextView txtResult ;
 
         LinearLayout llMain;
@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         edtWeight = findViewById(R.id.editWeight);
         edtHeightFt = findViewById(R.id.feetHeight);
         edtHeightIn = findViewById(R.id.inchesHeight);
-        btnCalculate = findViewById(R.id.btn_calculate);
+        Calculate = findViewById(R.id.btn_calculate);
         txtResult = findViewById(R.id.result);
         llMain = findViewById(R.id.llMain);
 
-        btnCalculate.setOnClickListener(new View.OnClickListener() {
+        Calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int wt = Integer.parseInt(edtWeight.getText().toString());
